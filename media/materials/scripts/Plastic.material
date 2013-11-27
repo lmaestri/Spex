@@ -1,0 +1,70 @@
+
+material Plastic
+{
+    receive_shadows on
+    technique
+    {
+        pass 0
+        {
+            ambient 0.5 0.5 0.5 1.0 
+            diffuse 0.5 0.5 0.5 1.0 
+            specular 0.9 0.9 0.9 1.0 100.5
+            emissive 0.0 0.0 0.0 1.0
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading phong
+            transparent_sorting on
+        }
+    }
+}
+//--------------------------------------------------
+// Inheritet materials
+//--------------------------------------------------
+material Plastic_Transparent : Plastic
+{
+    technique
+    {
+        pass 0
+        {
+            ambient 0.800000011920929 0.800000011920929 0.800000011920929 0.5
+            diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 0.5
+            scene_blend alpha_blend 
+            transparent_sorting on
+	}
+    }
+}
+material Plastic_Black : Plastic
+{
+    technique
+    {
+        pass 0 
+        {
+            ambient 0.2 0.2 0.2 1.0
+            diffuse 0.15 0.15 0.15 1.0
+	    specular 0.8 0.8 0.8 1.0 25
+	}
+    }
+}
+material Plastic_Blue : Plastic
+{
+    technique
+    {
+        pass 0 
+        {
+            ambient 0.09266488254070282 0.2011290192604065 0.615165114402771 1.0
+            diffuse 0.09266488254070282 0.2011290192604065 0.615165114402771 1.0
+	}
+    }
+}

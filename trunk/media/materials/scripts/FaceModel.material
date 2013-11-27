@@ -1,0 +1,66 @@
+//# material for facePlaceHolder (cut away parts of the glasses)
+material FaceModel/Transparent
+{
+	technique
+	{
+		pass
+		{
+			//#this enables alpha-blending so object is transparent
+			scene_blend alpha_blend
+
+			ambient 0.5 0.5 0.5 0.0
+			diffuse 0.5 0.5 0.9 0.0
+			depth_write on
+			//# idealy this handles occlusions also quite good
+			//#cull_hardware anticlockwise ... nope doesn't :(
+		}
+	}
+}
+
+material FaceModel/Solid
+{
+	technique
+	{
+		pass
+		{
+			//#this enables alpha-blending so object is transparent
+			scene_blend alpha_blend
+
+			ambient 0.5 0.5 0.5 1.0
+			diffuse 0.9 0.2 0.2 1.0
+			depth_write on
+		}
+	}
+}
+
+material FaceModel/Wires
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+
+			ambient 0.5 0.5 0.5 0.8
+			diffuse 0.2 0.2 0.9 0.8
+			depth_write off
+			depth_check off
+		}
+	}
+}
+
+material Skeleton/Node
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+
+			ambient 0.5 0.5 0.5 0.8
+			diffuse 0.2 0.9 0.2 0.8
+			depth_write off
+			depth_check off
+		}
+	}
+}

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="trunk\ogreViewer\src\AppLogic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\Face.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\FaceManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\FaceTracker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\KinectSensor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\mainMRGlasses.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\OgreRender.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\Spectacles.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\SpectaclesManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\TrayGroup.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="trunk\ogreViewer\src\TrayGroupManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="trunk\ogreViewer\inc\AppLogic.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\Face.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\FaceManager.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\FaceTracker.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\KinectSensor.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\OgreRender.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\Spectacles.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\SpectaclesManager.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\TrayGroup.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="trunk\ogreViewer\inc\TrayGroupManager.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{D7A8B04A-4948-44E7-B759-E9FBA7EB5895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{F35FF814-EC4C-4995-AE57-B3102CB81BFC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

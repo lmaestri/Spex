@@ -1,0 +1,61 @@
+
+// blender material: Metal_earpiece
+material Metal
+{
+    receive_shadows on
+    technique
+    {
+        pass 0
+        {
+            ambient 0.5 0.5 0.5 1.0
+            diffuse 0.5 0.5 0.5 1.0
+            specular 1.0 1.0 1.0 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading phong
+            transparent_sorting on
+    	}	
+    }
+}
+
+//--------------------------------------------------
+// Inheritet materials
+//--------------------------------------------------
+// inherited materials
+material Metal_Light : Metal 
+{
+    technique
+    {
+        pass 0
+        {
+            ambient 0.5289431810379028 0.5170950889587402 0.6038039922714233 1.0
+            diffuse 0.42315455113581635 0.413676077331246 0.48304320101504317 1.0
+            specular 0.8196463115887127 0.8196463115887127 0.8196463115887127 1.0 3.75
+	}
+    }
+}
+material Metal_Dark : Metal 
+{
+    technique
+    {
+        pass 0
+        {
+            ambient 0.42921581864356995 0.42921581864356995 0.42921581864356995 1.0
+            diffuse 0.34337266003150724 0.34337266003150724 0.34337266003150724 1.0
+            specular 1.0 1.0 1.0 1.0 12.5
+	}
+    }
+}

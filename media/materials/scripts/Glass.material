@@ -1,0 +1,71 @@
+
+// blender material: Glass
+material Glass 
+{
+    receive_shadows on
+    technique
+    {
+        pass 0
+        {
+            ambient 0.7230815887451172 0.7278121709823608 0.800000011920929 0.5
+            diffuse 0.578465279615898 0.5822497454620859 0.6400000190734865 0.5
+            specular 0.5 0.5 0.5 0.5 12.5
+            emissive 0.0 0.0 0.0 0.5
+            alpha_to_coverage on
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend alpha_blend 
+            shading phong
+            transparent_sorting on
+        
+		texture_unit
+		{
+			texture envmap_Farblabor2.bmp
+			colour_op_ex add_signed src_texture src_current
+			colour_op_multipass_fallback one one
+			env_map spherical
+		}
+
+	}
+    }
+}
+
+//--------------------------------------------------
+// Inheritet materials
+//--------------------------------------------------
+material Glass_Transparent : Glass
+{
+	// everything the same as in parent!
+}
+material Glass_Black : Glass
+{
+    technique
+    {
+        pass 0
+        {
+            ambient 0.03352266922593117 0.03362678363919258 0.035215623676776886 0.5
+            diffuse 0.026818135780366292 0.026901427312216564 0.028172499361224457 0.5
+	}
+   }
+
+}
+material Glass_Green : Glass
+{
+    technique
+    {
+        pass 0
+        {
+            ambient 0.113373763859272 0.3108050525188446 0.0957523062825203 0.5
+            diffuse 0.09069901243893819 0.24864404572016063 0.07660184616747268 0.5
+	}
+    }
+}

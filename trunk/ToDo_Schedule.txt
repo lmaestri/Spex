@@ -1,0 +1,41 @@
+ToDo and Schedule for "Brillenprojekt" after the meeting on 30th of July
+====================================================================
+time constraint: 13. August 2012 (14:00 o'clock) [budget: 7.5 days]
+
+Things to prepare for the DEMO:
+----------------------------------------------------------------------
+- 3 different models of glasses to choose and render
+- take pictures of 3 different perspectives, which can be viewed afterwards (small modifications for transformations should still be possible)
+
+ToDos  (x)... is done
+---------------------------------------------------------------------
+x look at rotations again
+~ increase framerate by updatin textures only if something changed (or thread)	[.5] 
+x make a own widget to handle toggleing and for a more compact GUI		[.5]
+x load more glasses-models and make it configurable (also placeHolder Mesh)	[1]
+- accumulate depth textue for occlusions and check if possible			[2]
+x store screenshot and pose 							[.5]
+x make a viewer for screenshots and pose 					[.5]
+(-) improve rendering (cubemap, metall-materials)					[1 ]
+x finish GUI stuff								[.5]
+- bug fixing									[1]
+_____________________________________________________________________________________
+  sum										[7.5]
+
+Timetable (planned)
+------------------------------
+(August)
+1.: load more glasses and configure [occupied with GPU Pro, continue tomorrow ...]
+2.: finish above; widgets
+3.(Fr): store screenshot and pose + viewer [ fuck! ... far behind schedule ]
+6.(Mo): improve rendering
+7.: accumulate depth texture
+8.: (above)
+9.: increase framrate; finish GUI
+10.(Fr): bug-fixing
+
+Timetable (10. Agust, Fr)
+--------------------------------------------------
+improveing rendering still needs some tweaking.
+add fresnel-shader or something for glass!
+accumulating the depth buffer is not ready. (try to add the depth buffer as it is?)

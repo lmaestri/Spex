@@ -1,0 +1,50 @@
+vertex_program StdQuad_vp_glsl glsl
+{
+	source StdQuad_vp.glsl
+}
+fragment_program DepthTex_fp_glsl glsl
+{
+	source DepthTex_fp.glsl
+	default_params
+	{
+	}
+}
+
+material DepthTexMaterial
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			depth_check off
+			depth_write on
+			lighting off
+
+			vertex_program_ref StdQuad_vp_glsl
+			{
+			}
+			fragment_program_ref DepthTex_fp_glsl
+			{
+				// textures
+				param_named ColorTex int 0 
+				param_named DepthTex int 1
+			}
+			texture_unit ColorTex
+			{
+                		tex_coord_set 0
+				tex_address_mode clamp
+				filtering linear linear linear
+			}
+			texture_unit DepthTex
+			{
+                		tex_coord_set 0
+				tex_address_mode clamp
+				filtering linear linear linear
+			}
+		}
+	}
+}
+
+

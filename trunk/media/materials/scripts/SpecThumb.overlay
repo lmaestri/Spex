@@ -1,0 +1,9 @@
+template container Panel(Spectacles/Thumb)
+{
+        metrics_mode pixels
+        material SdkTrays/Logo
+        horz_align center
+        width 200 
+        height 112
+}
+
